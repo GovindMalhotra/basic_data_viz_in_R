@@ -1,7 +1,12 @@
 new111.R
 ajay
 
+
 Sun Jul 12 16:16:12 2015
+
+updated by govind
+Friday Jul 24 00:47:05 2015
+
 
 library(RColorBrewer)
 
@@ -30,8 +35,8 @@ data(iris)
 par(mfrow=c(2,2))
 boxplot(iris$Sepal.Length,col="red")
 boxplot(iris$Sepal.Length~iris$Species,col="red")
-boxplot(iris$Sepal.Length~iris$Species,col=heat.colors(3))
-boxplot(iris$Sepal.Length~iris$Species,col=topo.colors(3))
+boxplot(iris$Sepal.Length~iris$Species,col=heat.colors(6))
+boxplot(iris$Sepal.Length~iris$Species,col=topo.colors(6))
 
 
 par(mfrow=c(2,1))
@@ -56,10 +61,11 @@ plot(iris$Petal.Length,iris$Species,col='blue',main="Title")
 plot(iris$Petal.Length,iris$Species,col='blue',main="Title")
 plot(iris$Species,iris$Petal.Length,col='blue',main="Title")
 
-boxplot(iris$Petal.Length)
+
 boxplot(iris$Petal.Length~iris$Species)
 
 barplot(iris$Petal.Length)
+
 
 
 par(mfrow=c(1,1))
